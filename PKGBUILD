@@ -127,3 +127,18 @@ package_lib32-opengl-amdgpu-pro(){
   move_libdir "opt/amdgpu-pro/lib/i386-linux-gnu" "usr/lib32/amdgpu-pro"
   sed -i "s|/opt/amdgpu-pro/lib/i386-linux-gnu|#/usr/lib32/amdgpu-pro  # commented to prevent problems of booting with amdgpu-pro, use progl32 script|" "${pkgdir}"/etc/ld.so.conf.d/10-amdgpu-pro-i386.conf
 }
+sha256sums=('feb74796c3152cbafaba89d96e68a152f209bd3058c7eb0413cbe1ab0764e96f'
+            'e32801c38b475cd8df17a407726b86db3de26410f563d688325b4d4314fc5354'
+            '311afa87708a502d1a3e15662fffe6030bbebf511e709ae47393cc54852d95d8'
+            '129721ead82e6a42a2c0a159983f340540c03fffddc6d01a73118bd303ac43aa'
+            '78d6b94d802b78612602561fb0441af988fdff8b3b14a36c2c84d6ef25b48644'
+            '71d7ba006a985b8b3cef1b19a9200789ff78e4ce0569b9efdd958f983034105a'
+            '84a7c66ec82208bcacd22708d9507b040b6df4b3637743f779e711c69a654c80'
+            'b6b70ad6d9b5572ff1c7cceafc5a3154255e8f95087f400cf20f6ce9b605ecd1'
+            'ab94609fde3719b194d3a1ac1126fb8048124af1024171b216d0cd4294682539'
+            '93931a97723ce6158d3ea9befdc7a6a452b015ce8467ef11f38997f90aa0c354'
+            '3dd97653dc0e3536a3f16bf6c473aed3eff906eee39958d4c7dcd72c0ecd8db1'
+            '2e4fe116c2895e3761798eba008f387b8c3f7690b8a80dd986016d505024367c'
+            '6aa5b0cd23aacc5776f294312013b44b7e6ba5733739bd08e32bb272f9fdf33d'
+            '94060c15ad3a1831a395b50008e6e0a59f5357cc3b71c367c1704fdc0c093d11'
+            '57464c3cb471c65eb42ff4783eac86b5d3a3b509e78401b5e078ef95d33d2559')
