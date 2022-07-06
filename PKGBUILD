@@ -127,6 +127,7 @@ package_lib32-opengl-amdgpu-pro(){
   move_libdir "opt/amdgpu-pro/lib/i386-linux-gnu" "usr/lib32/amdgpu-pro"
   sed -i "s|/opt/amdgpu-pro/lib/i386-linux-gnu|#/usr/lib32/amdgpu-pro  # commented to prevent problems of booting with amdgpu-pro, use progl32 script|" "${pkgdir}"/etc/ld.so.conf.d/10-amdgpu-pro-i386.conf
 }
+
 sha256sums=('feb74796c3152cbafaba89d96e68a152f209bd3058c7eb0413cbe1ab0764e96f'
             'e32801c38b475cd8df17a407726b86db3de26410f563d688325b4d4314fc5354'
             '311afa87708a502d1a3e15662fffe6030bbebf511e709ae47393cc54852d95d8'
