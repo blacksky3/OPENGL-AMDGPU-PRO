@@ -80,6 +80,7 @@ move_copyright(){
 
 package_opengl-amdgpu-pro(){
   pkgdesc='AMDGPU Pro OpenGL driver'
+  arch=(x86_64)
   license=(custom: AMDGPU-PRO EULA)
   provides=(opengl-driver libegl libgl libgles)
   depends=(libdrm libx11 libxcb libxdamage libxext libxfixes libxxf86vm)
@@ -108,6 +109,7 @@ package_opengl-amdgpu-pro(){
 
 package_lib32-opengl-amdgpu-pro(){
   pkgdesc='AMDGPU Pro OpenGL driver (32-bit)'
+  arch=(i686 x86_64)
   license=(custom: AMDGPU-PRO EULA)
   provides=(lib32-opengl-driver lib32-libegl lib32-libgl lib32-libgles)
   depends=(opengl-amdgpu-pro=${major}_${minor}-${pkgrel} lib32-libdrm lib32-libx11 lib32-libxcb lib32-libxdamage lib32-libxext lib32-libxfixes lib32-libxxf86vm)
