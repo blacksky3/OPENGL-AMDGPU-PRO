@@ -84,6 +84,7 @@ package_opengl-amdgpu-pro(){
   license=(custom: AMDGPU-PRO EULA)
   provides=(opengl-driver libegl libgl libgles)
   depends=(libdrm libx11 libxcb libxdamage libxext libxfixes libxxf86vm)
+  conflicts=(opengl-amdgpu-pro-21.20)
   backup=(etc/amd/amdapfxx.blb)
 
   extract_deb "${srcdir}"/libegl1-amdgpu-pro_${major}-${minor}~${ubuntu_ver}_amd64.deb
@@ -113,6 +114,7 @@ package_lib32-opengl-amdgpu-pro(){
   license=(custom: AMDGPU-PRO EULA)
   provides=(lib32-opengl-driver lib32-libegl lib32-libgl lib32-libgles)
   depends=(opengl-amdgpu-pro=${major}_${minor}-${pkgrel} lib32-libdrm lib32-libx11 lib32-libxcb lib32-libxdamage lib32-libxext lib32-libxfixes lib32-libxxf86vm)
+  conflicts=(lib32-opengl-amdgpu-pro-21.20)
   backup=(etc/amd/amdrc etc/ld.so.conf.d/10-amdgpu-pro-i386.conf)
 
   extract_deb "${srcdir}"/libegl1-amdgpu-pro_${major}-${minor}~${ubuntu_ver}_i386.deb
